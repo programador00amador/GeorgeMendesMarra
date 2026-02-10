@@ -1,0 +1,108 @@
+## 🧠 Questões Teóricas sobre DNS
+
+**1.** O que significa a sigla DNS e qual é sua principal função?  
+DNS significa Domain Name System (Sistema de Nomes de Domínio).
+
+ Função principal:
+Traduzir nomes de sites (ex: google.com) em endereços IP (ex: 142.250.190.14), que são os números que os computadores usam para se comunicar.
+
+
+ Em resumo:
+DNS é como a agenda telefônica da internet.
+
+**2.** Por que o DNS foi criado? Qual problema ele resolveu na Internet?
+No início da internet, os usuários tinham que memorizar endereços IP numéricos, o que era difícil e pouco prático.
+
+❌ Exemplo antigo:
+142.250.190.14
+
+✅ Com o DNS:
+google.com
+
+👉 Problema resolvido:
+
+Eliminou a necessidade de decorar números
+
+Tornou a internet mais fácil, rápida e escalável
+
+
+Sem o DNS, navegar na internet seria muito complicado.
+**3.** O que é um nome de domínio? Dê um exemplo.
+Um nome de domínio é o nome legível que identifica um site na internet e substitui o endereço IP.
+
+🔹 Ele é único no mundo
+🔹 Facilita o acesso aos sites
+
+📎 Exemplo:
+
+
+openai.com
+
+google.com
+
+wikipedia.org
+**4.** Qual é a função de um servidor DNS?
+Um servidor DNS é o responsável por:
+
+✔ Receber a solicitação do usuário
+✔ Procurar o endereço IP correspondente ao domínio solicitado
+✔ Responder com o IP correto para que o site seja acessado
+
+📌 Exemplo do processo:
+
+
+Você digita google.com no navegador
+
+O servidor DNS busca o IP do Google
+
+Ele retorna o IP
+
+Seu navegador acessa o site
+**5.** Cite dois tipos de registros DNS e explique brevemente um deles.
+
+---
+
+## 🪟 Questões sobre DNS no Windows
+
+**6.** Qual comando do Windows é utilizado para testar a resolução de nomes DNS?
+👉 nslookup
+Ele consulta servidores DNS e verifica se um nome de domínio está sendo resolvido corretamente.
+**7.** Para que serve o comando `ipconfig /all` em relação ao DNS?
+
+Servidores DNS configurados
+
+Nome do host
+
+Sufixo DNS
+
+Tipo de conexão
+**8.** Qual comando pode ser usado para limpar o cache DNS no Windows?
+👉 ipconfig /flushdns
+Remove registros DNS armazenados temporariamente.
+**9.** Onde o Windows armazena temporariamente as informações de DNS?
+👉 No cache DNS do sistema, mantido em memória pelo serviço Cliente DNS (DNS Client).
+**10.** Ao acessar um site no Windows e ocorrer erro de DNS, cite uma possível causa.
+👉 Servidor DNS mal configurado ou indisponível
+Outras causas possíveis:
+
+Cache DNS corrompido
+
+Problemas de rede
+
+Domínio inexistente
+---
+
+## 🐧 Questões sobre DNS no Linux
+
+**11.** Qual arquivo do Linux contém os servidores DNS configurados no sistema?
+👉 /etc/resolv.conf
+**12.** Qual comando pode ser usado no Linux para consultar registros DNS de um domínio?
+👉 dig ou nslookup
+**13.** Para que serve o comando `ping` em relação ao DNS?
+👉 Verifica se o nome de domínio está sendo resolvido, pois o ping precisa converter o nome em IP antes de enviar pacotes.
+**14.** Qual a função do arquivo `/etc/hosts` no processo de resolução de nomes?
+👉 Fazer a resolução local de nomes, associando manualmente nomes de domínio a endereços IP, antes da consulta ao DNS.
+**15.** Cite uma diferença básica entre a configuração de DNS no Windows e no Linux.
+👉 Windows: DNS configurado principalmente pela interface gráfica ou ipconfig
+👉 Linux: DNS configurado por arquivos de texto (ex: /etc/resolv.conf)
+---
